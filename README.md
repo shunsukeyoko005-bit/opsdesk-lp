@@ -1,9 +1,17 @@
-# static-lp（ビルド不要プレビュー）
+# OpsDesk static LP（公開中）
 
-Next.js（`apps/web`）がこの環境で `npm install` できない場合の**代替静的LP**です。
+本番URL: https://shunsukeyoko005-bit.github.io/opsdesk-lp/
 
-- 開き方: `index.html` をブラウザで開く、または任意の静的ホスティングへフォルダごと配置
-- 購入CTAは BOOTH URL 未設定のため無効（意図的）
-- `noindex` 固定。本番は Next 側の環境変数と公開承認後に切り替えること
+| パス | 内容 |
+|------|------|
+| `/` | LP + BOOTH購入CTA |
+| `/sample.html` | 無料サンプル説明 |
+| `/downloads/operations-desk-pro-free-v1.0.0.zip` | 無料ZIP |
+| `/articles/seikyu-nyukin-hyo.html` | 集客記事1本 |
 
-本番の正本は引き続き `apps/web`（Next.js）です。
+リポジトリ: https://github.com/shunsukeyoko005-bit/opsdesk-lp  
+（このフォルダ専用の git。親の ops-pro とは分離）
+
+更新手順: このフォルダで編集 → `git add -A && git commit && git push`（GitHub Pages が main を配信）
+
+Next.js 正本は `apps/web`。環境変数は `apps/web/.env.local`（Git 非推奨）。
