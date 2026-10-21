@@ -1,0 +1,281 @@
+:root {
+  --ink: #14213d;
+  --paper: #f4f7fb;
+  --accent: #0f766e;
+  --muted: rgba(20, 33, 61, 0.65);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans JP", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(15, 118, 110, 0.12), transparent 55%),
+    linear-gradient(180deg, #eef3f8 0%, var(--paper) 40%, #e8eef5 100%);
+  min-height: 100vh;
+}
+
+a {
+  color: var(--accent);
+}
+
+.wrap {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.site-header {
+  border-bottom: 1px solid rgba(20, 33, 61, 0.1);
+  background: rgba(244, 247, 251, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 1rem 0;
+}
+
+.brand {
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-en,
+.brand-hero {
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.35rem;
+}
+
+.brand-hero {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin: 0;
+}
+
+.brand-ja {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.accent-line {
+  width: 7rem;
+  height: 0.25rem;
+  background: var(--accent);
+  margin: 1rem 0;
+}
+
+.hero {
+  display: grid;
+  gap: 2rem;
+  padding: 3rem 1rem 2rem;
+}
+
+@media (min-width: 900px) {
+  .hero {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+  }
+}
+
+h1 {
+  font-family: "Shippori Mincho", serif;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 500;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.lede {
+  color: var(--muted);
+  max-width: 36rem;
+}
+
+.price {
+  font-family: "Shippori Mincho", serif;
+  font-size: 2rem;
+  margin: 0.25rem 0 0.75rem;
+  color: var(--accent);
+}
+
+.price-label,
+.note {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 0.375rem;
+  padding: 0.75rem 1.25rem;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  background: rgba(20, 33, 61, 0.25);
+  cursor: not-allowed;
+}
+
+.btn-small {
+  padding: 0.5rem 0.85rem;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.mock {
+  margin: 0;
+  background: #fff;
+  border: 1px solid rgba(20, 33, 61, 0.1);
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 50px rgba(20, 33, 61, 0.12);
+  overflow: hidden;
+}
+
+.mock-bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  background: var(--ink);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+}
+
+.muted {
+  opacity: 0.65;
+  font-size: 0.75rem;
+}
+
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.kpis div {
+  border: 1px solid rgba(20, 33, 61, 0.1);
+  background: var(--paper);
+  padding: 0.75rem;
+}
+
+.kpis span {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+.kpis strong {
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.25rem;
+  color: var(--accent);
+}
+
+.section {
+  padding: 2.5rem 1rem;
+}
+
+.cards {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 700px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cards li {
+  border-left: 2px solid var(--accent);
+  padding-left: 1rem;
+}
+
+.dark {
+  background: var(--ink);
+  color: #e8eef5;
+}
+
+.dark a {
+  color: #99f6e4;
+}
+
+.grid-2 {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 700px) {
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.faq div {
+  border-bottom: 1px solid rgba(20, 33, 61, 0.1);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.faq dt {
+  font-weight: 600;
+}
+
+.faq dd {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.site-footer {
+  border-top: 1px solid rgba(20, 33, 61, 0.1);
+  padding: 1.5rem 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.site-footer a {
+  color: var(--muted);
+}
+
+.page {
+  padding: 2.5rem 1rem 4rem;
+  max-width: 48rem;
+}
+
+.warn {
+  border: 1px solid rgba(180, 83, 9, 0.4);
+  background: rgba(180, 83, 9, 0.1);
+  padding: 0.85rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.9rem;
+}

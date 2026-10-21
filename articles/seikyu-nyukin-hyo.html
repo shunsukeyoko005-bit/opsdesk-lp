@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>請求と入金を表で追うときに、最初に決める3つの列 | OpsDesk</title>
+    <meta
+      name="description"
+      content="請求漏れと入金遅れを同じ表で追うなら、請求日・支払期日・入金日を分けます。無料サンプルと有料テンプレートへの導線付き。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600&family=Shippori+Mincho:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap row">
+        <a class="brand" href="../index.html">
+          <span class="brand-en">Operations Desk PRO</span>
+          <span class="brand-ja">業務管理ダッシュボードPRO</span>
+        </a>
+        <nav aria-label="主要">
+          <a href="../sample.html">無料サンプル</a>
+          <a href="https://opsdesk.booth.pm/items/9020369" rel="noopener">購入（BOOTH）</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap page article">
+      <p class="note">公開日: 2026-10-21 · 検索効果・売上は保証しません</p>
+      <h1>請求と入金を表で追うときに、最初に決める3つの列</h1>
+      <p class="lede">
+        請求漏れと入金遅れを同じ表で追うなら、最低限「請求日・支払期日・入金日」を分けます。ステータスだけに頼ると、日付の空白が見えなくなります。
+      </p>
+
+      <h2>この記事で分かること</h2>
+      <p>
+        請求と入金を1つの表で追うときの列設計の最低ラインと、よくある失敗です。
+      </p>
+
+      <h2>手順</h2>
+      <ol>
+        <li>請求IDと案件IDを先に決める（重複禁止）</li>
+        <li>請求額を入れる</li>
+        <li>請求日・支払期日を入れる。入金前は入金日を空欄のまま</li>
+        <li>入金状態を「未請求 / 未入金 / 入金済 / 取消」などから選ぶ</li>
+        <li>未入金・遅延の一覧を見る（検証日は設定で固定する）</li>
+      </ol>
+
+      <h2>よくある失敗</h2>
+      <ul>
+        <li>請求額と案件の売上金額を同じ意味で使ってしまう</li>
+        <li>支払期日を入れず、遅延が永遠に出ない</li>
+        <li>顧客や案件のID参照がずれている</li>
+      </ul>
+
+      <h2>次の一手</h2>
+      <p>
+        無料サンプル（行数制限あり・架空データ）で未入金と警告列の見え方を確認し、必要ならフル版を検討してください。合わなければ購入しないでください。
+      </p>
+
+      <div class="buy-block" style="margin-top: 2rem">
+        <p class="price-label">無料で試す</p>
+        <p>
+          <a class="btn" href="../downloads/operations-desk-pro-free-v1.0.0.zip"
+            >無料サンプルZIPをダウンロード</a
+          >
+        </p>
+        <p class="note">案件30行・請求30行・顧客10行まで。効果や売上改善は保証しません。</p>
+        <p class="price-label" style="margin-top: 1.5rem">フル版（検証価格）</p>
+        <p class="price">¥4,980</p>
+        <p>
+          <a
+            class="btn"
+            href="https://opsdesk.booth.pm/items/9020369"
+            rel="noopener"
+            >BOOTHでフル版を見る</a
+          >
+        </p>
+        <p class="note">個別チャット・カスタム開発は含みません。</p>
+      </div>
+
+      <p style="margin-top: 2rem"><a href="../index.html">← トップへ</a></p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap row">
+        <p>© 2026 Operations Desk PRO / OpsDesk. 売上・効果を保証するものではありません。</p>
+        <p>
+          <a href="../legal.html">特商法</a> ·
+          <a href="../privacy.html">プライバシー</a> ·
+          <a href="../terms.html">利用規約</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
